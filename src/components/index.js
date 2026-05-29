@@ -1,4 +1,7 @@
 export { InfoBar } from './InfoBar'
+export { HeroSection } from './HeroSection'
+export { ProblemSection } from './ProblemSection'
+export { ProblemsSection } from './ProblemsSection'
 export { Button } from './Button'
 export { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './Card'
 export { Layout } from './Layout'

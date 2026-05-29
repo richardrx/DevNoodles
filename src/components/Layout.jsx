@@ -1,11 +1,13 @@
 import { InfoBar } from './InfoBar'
 
+const CONTAINER = 'mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-[156px]'
+
 export function Layout({ children }) {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
       <InfoBar />
       <Header />
-      <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <main>
         {children}
       </main>
       <Footer />
@@ -18,7 +20,7 @@ const navLinks = ['Plataforma', 'Depoimentos', 'Criador', 'Planos']
 function Header() {
   return (
     <header className="border-b border-nav-border bg-background">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-[18px] sm:px-6 lg:px-8">
+      <div className={`${CONTAINER} flex items-center justify-between py-[18px]`}>
 
         {/* Logo */}
         <a href="#" className="shrink-0">
@@ -55,7 +57,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-border mt-16">
-      <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
+      <div className={`${CONTAINER} py-6`}>
         <p className="text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Dev Noodles. Todos os direitos reservados.
         </p>
