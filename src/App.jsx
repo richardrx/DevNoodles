@@ -1,11 +1,11 @@
-import { Layout, HeroSection, ProblemSection, ProblemsSection } from './components'
+import { Layout, HeroSection, PainSection, FourProblemsSection } from './components'
 
 export default function App() {
   return (
     <Layout>
       <HeroSection />
-      <ProblemSection />
-      <ProblemsSection />
+      <PainSection />
+      <FourProblemsSection />
     </Layout>
   )
 }

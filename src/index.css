@@ -12,11 +12,14 @@
   --color-foreground: #0f172a;
 
   --color-brand: #faef77;
+  --color-brand-shadow: #e6da4e;
   --color-brand-text: #44403b;
   --color-nav-text: #79716b;
   --color-nav-border: #d6d3d1;
+  --color-heading: #1c1917;
+  --color-cream: #f1eddf;
 
-  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;

@@ -1,6 +1,6 @@
 import { InfoBar } from './InfoBar'
 
-const CONTAINER = 'mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-[156px]'
+export const CONTAINER = 'mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-[156px]'
 
 export function Layout({ children }) {
   return (
@@ -24,7 +24,7 @@ function Header() {
 
         {/* Logo */}
         <a href="#" className="shrink-0">
-          <img src="/logo.webp" alt="DevNoodles" className="h-8 w-auto" />
+          <img src="/logo.webp" alt="DevNoodles" width={128} height={32} className="h-8 w-auto" />
         </a>
 
         {/* Nav links — desktop only */}
@@ -33,7 +33,7 @@ function Header() {
             <a
               key={link}
               href="#"
-              className="font-['Archivo',sans-serif] text-[14px] tracking-[-0.02em] text-nav-text hover:text-foreground transition-colors"
+              className="text-[14px] tracking-[-0.02em] text-nav-text hover:text-foreground transition-colors"
             >
               {link}
             </a>
@@ -43,7 +43,7 @@ function Header() {
         {/* CTA Button */}
         <a
           href="#"
-          className="border border-nav-border rounded-2xl px-6 py-3 font-['Archivo',sans-serif] font-medium text-base text-nav-text hover:bg-muted transition-colors whitespace-nowrap"
+          className="border border-nav-border rounded-2xl px-6 py-3 font-medium text-base text-nav-text hover:bg-muted transition-colors whitespace-nowrap"
         >
           <span className="hidden sm:inline">Garantir minha vaga</span>
           <span className="sm:hidden">Garantir vaga</span>
